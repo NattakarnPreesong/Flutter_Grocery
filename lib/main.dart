@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/provider/dark_theme_provider.dart';
-import 'package:grocery_app/screens/home_screen.dart';
+import 'package:grocery_app/screens/btm_bar.dart';
+// import 'package:grocery_app/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'consts/theme_data.dart';
@@ -42,9 +43,9 @@ class _MyAppState extends State<MyApp> {
           Consumer<DarkThemeProvider>(builder: (context, themeProvider, child) {
         return MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'Flutter Demo',
+            title: 'Grory App',
             theme: Styles.themeData(themeProvider.getDarkTheme, context),
-            home: const HomeScreen());
+            home: const BottomBarScreen());
       }),
     );
   }

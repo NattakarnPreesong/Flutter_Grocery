@@ -17,14 +17,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Center(
           child: SwitchListTile(
-        title: const Text('Theme'),
+        title: const Text('Theme Nattakarn'),
         secondary: Icon(themeState.getDarkTheme
             ? Icons.dark_mode_outlined
             : Icons.light_mode_outlined),
         onChanged: (bool value) {
-         setState(() {
+          setState(() {
             themeState.setDarkTheme = value;
-         });
+          });
         },
         value: themeState.getDarkTheme,
       )),
